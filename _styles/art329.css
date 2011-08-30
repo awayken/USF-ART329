@@ -49,7 +49,7 @@ footer p { margin: 0; padding: 4px 8px; }
 
 /** Colors & Typography **/
 /** color, background, border, font (style, variant, weight, size, family), line-height, text **/
-body { color: #666; font: normal normal normal 0.8em/1.5 Tahoma, sans-serif; }
+body { color: #666; background: #fff; font: normal normal normal 0.8em/1.5 Tahoma, sans-serif; }
 
 a, a:link, a:visited
 	{ color: #000; font-weight: bold; text-decoration: none; }
@@ -78,6 +78,32 @@ section h4 { font-size: 1.3em; }
 section h5 { font-size: 1.2em; }
 section h6 { font-size: 1.1em; }
 
-code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', cursive; }
+code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', monospace; }
 
 footer { color: #555; background: #d8dbdd; border: 2px solid #000; border-radius: 8px; }
+
+
+
+
+/** Print Styles **/
+@media print {
+	* { background: #fff; }
+	
+	a, a:link, a:visited
+		{ font-weight: normal; text-decoration: underline; }		
+	a:link:after, a:visited:after {
+		content: " (" attr(href) ") ";
+		font-size: 90%;
+	}
+		
+	code { font-size: 1em; }
+	
+	nav { display: none; }
+	
+	section { padding-left: 20px; page-break-after: always; page-break-inside: avoid; }
+	section h1, section h2, section h3, section h4, section h5, section h6
+		{ font-family: georgia, serif; }
+	section h1 { margin-left: -20px; color: #483183; background: #fff; }
+	
+	footer { display: none; }
+}
