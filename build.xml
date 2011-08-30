@@ -1,0 +1,29 @@
+<project name="art329" default="all" basedir=".">
+	<description>Builds the ART329 website.</description>
+
+	<tstamp>
+		<format property="build_date" pattern="MMMM dd, yyyy" />
+	</tstamp>
+
+	<!-- set global properties for this build -->
+	<property name="syllabus" location="syllabus" />
+	<property name="syllabus_dist" location="syllabus_dist" />
+
+	<target name="syllabus" description="Build the course syllabus.">
+		<tstamp />
+		<copy todir="${syllabus_dist}">
+			<fileset dir="${syllabus}" />
+			<filterset>
+				<filter token="lastupdated" value="${build_date}" />
+			</filterset>
+		</copy>
+	</target>
+
+	<target name="all" depends="syllabus">
+
+	</target>
+
+	<target name="clean" description="Clean up our built folders and files">
+		<delete dir="${syllabus_dist}" />
+	</target>
+</project>
