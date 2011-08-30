@@ -9,20 +9,19 @@
 			this.smoothScroll();
 		},
 		
-	// Smooth Scroll action
+	// Smooth Scroll
 		smoothScroll: function () {
-			var body = $('body');
+			var scroller = $('html:not(:animated),body:not(:animated)');
 			
 			$('a[href^=#]')
 				.click(function (e) {
-					var target = $(this).attr('href'), targetel = $(target), targetpos = 0;
+					var goto = $(this).attr('href'), goto_el = $(goto), goto_pos = 0;
 					
-					if (targetel.length) {
+					if (goto_el.length) {
 						e.preventDefault();
 						
-						targetpos = targetel.offset().top;
-						body.animate({ 'scrollTop': targetpos + 'px' }, 300);
-						location.hash = target;
+						goto_pos = goto_el.offset().top;
+						scroller.animate({ 'scrollTop': String(goto_pos) + 'px' }, 600, 'swing', function () { location.hash = goto; });
 					}
 				});
 		}
