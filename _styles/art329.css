@@ -55,6 +55,8 @@ a, a:link, a:visited
 	{ color: #000; font-weight: bold; text-decoration: none; }
 a:hover, a:active
 	{ border-bottom: 1px solid #483183; }
+	
+code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', monospace; }
 
 header { text-align: center; }
 header h1, header h2, header h3, header h4, header h5, header h6
@@ -78,7 +80,7 @@ section h4 { font-size: 1.3em; }
 section h5 { font-size: 1.2em; }
 section h6 { font-size: 1.1em; }
 
-code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', monospace; }
+#schedule time { font-weight: bold; }
 
 footer { color: #555; background: #d8dbdd; border: 2px solid #000; border-radius: 8px; }
 
