@@ -46,6 +46,8 @@ section h2 { margin-bottom: 0; }
 footer { width: 50%; margin: 0 auto 8px auto; }
 footer p { margin: 0; padding: 4px 8px; }
 
+table.grading { width: 140px; margin: 0 auto; }
+
 .html5logo { display: block; margin: 8px auto 0 auto; }
 
 
@@ -87,6 +89,14 @@ section h6 { font-size: 1.1em; }
 #schedule time { font-weight: bold; }
 
 footer { color: #555; background: #d8dbdd; border: 2px solid #000; border-radius: 8px; }
+
+table.grading { border: 1px solid #483183; }
+table.grading thead th { border-bottom: 1px solid #483183; }
+table.grading td { text-align: center; }
+
+table.zebra { background: #fafafa; }
+table.zebra tbody tr:nth-child(2n + 1) td { background: #eee; }
+table.zebra tbody tr:hover td { color: #fff; background: #483183; }
 
 .html5logo { text-align: center; }
 a.html5logo:hover { border: none; }
