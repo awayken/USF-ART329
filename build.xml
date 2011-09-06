@@ -51,11 +51,15 @@
 		
 	</target>
 
-	<target name="all" depends="syllabus">
+	<target name="clean" description="Clean up our built folders and files">
+		<delete dir="${syllabus_dist}" />
+	</target>
+
+	<target name="rebuild" depends="clean, all">
 
 	</target>
 
-	<target name="clean" description="Clean up our built folders and files">
-		<delete dir="${syllabus_dist}" />
+	<target name="all" depends="syllabus">
+
 	</target>
 </project>
