@@ -48,6 +48,12 @@ footer p { margin: 0; padding: 4px 8px; }
 
 table.grading { width: 140px; margin: 0 auto; }
 
+table.rubric { width: 90%; margin: 8px auto 8px auto; }
+table.rubric thead th { width: 17%; }
+table.rubric thead th.area { width: 32%; }
+table.rubric thead th span { display: block; }
+table.rubric tbody th { padding-right: 4px; }
+
 .html5logo { display: block; margin: 8px auto 0 auto; }
 
 
@@ -90,13 +96,25 @@ section h6 { font-size: 1.1em; }
 
 footer { color: #555; background: #d8dbdd; border: 2px solid #000; border-radius: 8px; }
 
+table.zebra { background: #fafafa; }
+table.zebra tbody tr:nth-child(2n + 1) td { background: #eee; }
+table.zebra tbody tr:hover td { color: #fff; background: #483183; }
+
 table.grading { border: 1px solid #483183; }
 table.grading thead th { border-bottom: 1px solid #483183; }
 table.grading td { text-align: center; }
 
-table.zebra { background: #fafafa; }
-table.zebra tbody tr:nth-child(2n + 1) td { background: #eee; }
-table.zebra tbody tr:hover td { color: #fff; background: #483183; }
+table.rubric { border: 1px solid #483183; }
+table.rubric thead th { border-bottom: 1px solid #483183; }
+table.rubric thead th.bad { color: #f00; }
+table.rubric thead th.good { color: #060; }
+table.rubric thead th.better { color: #090; }
+table.rubric thead th.best { color: #0f0; }
+table.rubric tbody th { border-top: 1px solid #483183; background: #f6f6f6; font-weight: normal; text-align: right; }
+table.rubric tbody td { border-top: 1px solid #483183; }
+table.rubric tbody tr:first-child th, table.rubric tbody tr:first-child td
+	{ border-top: none; }
+table.rubric td { text-align: center; }
 
 .html5logo { text-align: center; }
 a.html5logo:hover { border: none; }
