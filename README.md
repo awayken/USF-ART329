@@ -3,7 +3,7 @@ USF 2011 ART329
 
 Welcome to ART329, for the Fall of 2011. This project includes all the course materials for this course that have been provided by the instructor.
 
-View the current homepage for this site: http://dl.dropbox.com/u/76311/art329/
+View the current homepage for this site: http://dl.dropbox.com/u/76311/art329/index.html
 
 This repository includes:
 
