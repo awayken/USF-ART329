@@ -1,22 +1,37 @@
 <project name="art329" default="all" basedir=".">
 	<description>Builds the ART329 website.</description>
-
+	
+	
+	<!-- set global properties for this build -->
 	<tstamp>
 		<format property="build_date" pattern="MMMM dd, yyyy" />
 	</tstamp>
-
-	<!-- set global properties for this build -->
+	<property name="homepage" location="homepage" />
+	<property name="homepage_dist" location="homepage_dist" />
 	<property name="syllabus" location="syllabus" />
 	<property name="syllabus_dist" location="syllabus_dist" />
-
+	
+	
+	<!-- Filtersets -->
+	<filterset id="art329filters">
+		<filter token="lastupdated" value="${build_date}" />
+		<filter token="classurl" value="http://dl.dropbox.com/u/76311/art329/index.html" />
+	</filterset>
+	
+	
+	<!-- Homepage -->
+	<target name="homepage" description="Build the course homepage.">
+		<copy todir="${homepage_dist}">
+			<fileset file="${homepage}/index.html" />
+			<filterset refid="art329filters" />
+		</copy>
+	</target>
+	
+	<!-- Syllabus -->
 	<target name="syllabus" description="Build the course syllabus.">
-		<tstamp />
-		
 		<copy todir="${syllabus_dist}">
 			<fileset file="${syllabus}/index.html" />
-			<filterset>
-				<filter token="lastupdated" value="${build_date}" />
-			</filterset>
+			<filterset refid="art329filters" />
 		</copy>
 		
 		<loadfile srcFile="${syllabus}/rubrics/01.html" property="rubric.01" encoding="UTF-8" failonerror="false" />
@@ -50,16 +65,16 @@
 		<replace dir="${syllabus_dist}" token="@rubric_14@" value="${rubric.14}" />
 		
 	</target>
-
+	
+	<!-- Clean -->
 	<target name="clean" description="Clean up our built folders and files">
+		<delete dir="${homepage_dist}" />
 		<delete dir="${syllabus_dist}" />
 	</target>
-
-	<target name="rebuild" depends="clean, all">
-
-	</target>
-
-	<target name="all" depends="syllabus">
-
-	</target>
+	
+	<!-- Rebuild -->
+	<target name="rebuild" depends="clean, all"></target>
+	
+	<!-- All -->
+	<target name="all" depends="homepage,syllabus"></target>
 </project>
