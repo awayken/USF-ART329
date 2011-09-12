@@ -8,7 +8,9 @@
 
 /** Layout **/
 /** position, top, left, right, bottom, z-index, float, display, width, height, margin, padding, list, overflow, vertical-align **/
-body { margin: 0; }
+html { height: 100%; overflow: hidden; }
+
+body { position: absolute; width: 100%; height: 100%; margin: 0; padding: 0; }
 
 code { display: inline-block; padding: 0 2px; }
 
@@ -22,7 +24,9 @@ section h1, section h2, section h3, section h4, section h5, section h6
 
 /** Colors & Typography **/
 /** color, background, border, font (style, variant, weight, size, family), line-height, text **/
-body { color: #666; background-color: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); font: normal normal normal 0.8em/1.5 Tahoma, sans-serif; }
+html { background: #fff; }
+
+body { color: #666; background: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); font: normal normal normal 0.8em/1.5 Tahoma, sans-serif; }
 
 a, a:link, a:visited
 	{ color: #000; font-weight: bold; text-decoration: none; }
@@ -39,5 +43,8 @@ section h1, section h2, section h3, section h4, section h5, section h6
 #presentation nav a:hover { border: none; }
 	
 #presentation .slides { background: #fff; }
+
+.layout_title h1 { font-family: 'Permanent Marker', cursive; }
+.layout_title h2 { font-family: 'Crushed', cursive; }
 	
 .layout_bullets h1 { border-bottom: 2px solid #483183; }
