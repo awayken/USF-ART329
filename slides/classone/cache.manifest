@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# rev 1
+
+styles/presentation.min.css
+
+scripts/html5.js
+scripts/jquery.min.js
+scripts/presentation.min.js
+
+index.html

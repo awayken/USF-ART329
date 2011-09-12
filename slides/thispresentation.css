@@ -1,0 +1,43 @@
+/****
+	Your presentation's styles go here.
+****/
+@import url('http://fonts.googleapis.com/css?family=VT323|Permanent+Marker|Crushed');
+
+
+
+
+/** Layout **/
+/** position, top, left, right, bottom, z-index, float, display, width, height, margin, padding, list, overflow, vertical-align **/
+body { margin: 0; }
+
+code { display: inline-block; padding: 0 2px; }
+
+nav { padding: 0 8px; }
+
+section h1, section h2, section h3, section h4, section h5, section h6
+	{ padding: 0.5em; }
+
+
+
+
+/** Colors & Typography **/
+/** color, background, border, font (style, variant, weight, size, family), line-height, text **/
+body { color: #666; background-color: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); font: normal normal normal 0.8em/1.5 Tahoma, sans-serif; }
+
+a, a:link, a:visited
+	{ color: #000; font-weight: bold; text-decoration: none; }
+a:hover, a:active
+	{ border-bottom: 1px solid #483183; }
+	
+code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', monospace; }
+
+section h1, section h2, section h3, section h4, section h5, section h6
+	{ color: #483183; font: normal normal normal 2.0em/1 'Crushed', cursive; }
+	
+#presentation nav { background: transparent; }
+#presentation nav a { font-weight: normal; }
+#presentation nav a:hover { border: none; }
+	
+#presentation .slides { background: #fff; }
+	
+.layout_bullets h1 { border-bottom: 2px solid #483183; }

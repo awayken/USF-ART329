@@ -70,7 +70,7 @@ a:hover, a:active
 	
 code { color: #555; background: #d8dbdd; font: normal normal normal 1.3em/1 'VT323', monospace; }
 
-header { text-align: center; background-color: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image:    -moz-linear-gradient(top, #eeeeee, #ffffff); background-image:     -ms-linear-gradient(top, #eeeeee, #ffffff); background-image:      -o-linear-gradient(top, #eeeeee, #ffffff); }
+header { text-align: center; background-color: #fff; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image:     -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); }
 header h1, header h2, header h3, header h4, header h5, header h6
 	{ color: #483183; font: normal normal normal 2.4em/1 'Permanent Marker', cursive; }
 header h2 { font-size: 1.8em; }

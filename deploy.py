@@ -30,6 +30,11 @@ if __name__ == "__main__":
 	shutil.rmtree(target + 'syllabus')
 	shutil.copytree('syllabus_dist', target + 'syllabus')
 	
+	# Slides
+	print 'Copying the slides...'
+	shutil.rmtree(target + 'slides')
+	shutil.copytree('slides', target + 'slides')
+	
 	### We're done!
 	print 'Deployment complete!'
 	
