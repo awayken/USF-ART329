@@ -18,6 +18,8 @@ nav { padding: 0 8px; }
 
 section h1, section h2, section h3, section h4, section h5, section h6
 	{ padding: 0.5em; }
+	
+.layout_questions .footnote a:after { display: block; }
 
 
 
