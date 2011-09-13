@@ -32,4 +32,4 @@ Build: `ant` or `ant all` or `ant rebuild` to get a fresh version
 
 The project also uses a small Python script for deployment. Deployment in this case is simply copying the distributable files to a target folder of your specification.
 
-`python deploy.py ~/Dropbox/public/art329/`
+`./deploy.py ~/Dropbox/public/art329/` or `python deploy.py ~/Dropbox/public/art329/`
