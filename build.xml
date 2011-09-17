@@ -10,12 +10,14 @@
 	<property name="homepage_dist" location="homepage_dist" />
 	<property name="syllabus" location="syllabus" />
 	<property name="syllabus_dist" location="syllabus_dist" />
+	<property name="assignments" location="assignments" />
+	<property name="assignments_dist" location="assignments_dist" />
 	
 	
 	<!-- Filtersets -->
 	<filterset id="art329filters">
 		<filter token="lastupdated" value="${build_date}" />
-		<filter token="classurl" value="http://dl.dropbox.com/u/76311/art329/index.html" />
+		<filter token="classurl" value="http://dl.dropbox.com/u/41609448/art329/index.html" />
 	</filterset>
 	
 	
@@ -33,36 +35,45 @@
 			<fileset file="${syllabus}/index.html" />
 			<filterset refid="art329filters" />
 		</copy>
+	</target>
+	
+	<!-- Assignments -->
+	<target name="assignments" description="Builds the assignments and adds in the rubrics.">
+		<copy todir="${assignments_dist}">
+			<fileset file="${assignments}/index.html" />
+			<filterset refid="art329filters" />
+		</copy>
 		
-		<loadfile srcFile="${syllabus}/rubrics/01.html" property="rubric.01" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/02.html" property="rubric.02" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/03.html" property="rubric.03" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/04.html" property="rubric.04" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/05.html" property="rubric.05" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/06.html" property="rubric.06" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/07.html" property="rubric.07" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/08.html" property="rubric.08" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/09.html" property="rubric.09" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/10.html" property="rubric.10" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/11.html" property="rubric.11" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/12.html" property="rubric.12" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/13.html" property="rubric.13" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${syllabus}/rubrics/14.html" property="rubric.14" encoding="UTF-8" failonerror="false" />
 		
-		<replace dir="${syllabus_dist}" token="@rubric_01@" value="${rubric.01}" />
-		<replace dir="${syllabus_dist}" token="@rubric_02@" value="${rubric.02}" />
-		<replace dir="${syllabus_dist}" token="@rubric_03@" value="${rubric.03}" />
-		<replace dir="${syllabus_dist}" token="@rubric_04@" value="${rubric.04}" />
-		<replace dir="${syllabus_dist}" token="@rubric_05@" value="${rubric.05}" />
-		<replace dir="${syllabus_dist}" token="@rubric_06@" value="${rubric.06}" />
-		<replace dir="${syllabus_dist}" token="@rubric_07@" value="${rubric.07}" />
-		<replace dir="${syllabus_dist}" token="@rubric_08@" value="${rubric.08}" />
-		<replace dir="${syllabus_dist}" token="@rubric_09@" value="${rubric.09}" />
-		<replace dir="${syllabus_dist}" token="@rubric_10@" value="${rubric.10}" />
-		<replace dir="${syllabus_dist}" token="@rubric_11@" value="${rubric.11}" />
-		<replace dir="${syllabus_dist}" token="@rubric_12@" value="${rubric.12}" />
-		<replace dir="${syllabus_dist}" token="@rubric_13@" value="${rubric.13}" />
-		<replace dir="${syllabus_dist}" token="@rubric_14@" value="${rubric.14}" />
+		<loadfile srcFile="${assignments}/rubrics/01.html" property="rubric.01" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/02.html" property="rubric.02" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/03.html" property="rubric.03" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/04.html" property="rubric.04" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/05.html" property="rubric.05" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/06.html" property="rubric.06" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/07.html" property="rubric.07" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/08.html" property="rubric.08" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/09.html" property="rubric.09" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/10.html" property="rubric.10" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/11.html" property="rubric.11" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/12.html" property="rubric.12" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/13.html" property="rubric.13" encoding="UTF-8" failonerror="false" />
+		<loadfile srcFile="${assignments}/rubrics/14.html" property="rubric.14" encoding="UTF-8" failonerror="false" />
+		
+		<replace dir="${assignments_dist}" token="@rubric_01@" value="${rubric.01}" />
+		<replace dir="${assignments_dist}" token="@rubric_02@" value="${rubric.02}" />
+		<replace dir="${assignments_dist}" token="@rubric_03@" value="${rubric.03}" />
+		<replace dir="${assignments_dist}" token="@rubric_04@" value="${rubric.04}" />
+		<replace dir="${assignments_dist}" token="@rubric_05@" value="${rubric.05}" />
+		<replace dir="${assignments_dist}" token="@rubric_06@" value="${rubric.06}" />
+		<replace dir="${assignments_dist}" token="@rubric_07@" value="${rubric.07}" />
+		<replace dir="${assignments_dist}" token="@rubric_08@" value="${rubric.08}" />
+		<replace dir="${assignments_dist}" token="@rubric_09@" value="${rubric.09}" />
+		<replace dir="${assignments_dist}" token="@rubric_10@" value="${rubric.10}" />
+		<replace dir="${assignments_dist}" token="@rubric_11@" value="${rubric.11}" />
+		<replace dir="${assignments_dist}" token="@rubric_12@" value="${rubric.12}" />
+		<replace dir="${assignments_dist}" token="@rubric_13@" value="${rubric.13}" />
+		<replace dir="${assignments_dist}" token="@rubric_14@" value="${rubric.14}" />
 		
 	</target>
 	
@@ -70,11 +81,12 @@
 	<target name="clean" description="Clean up our built folders and files">
 		<delete dir="${homepage_dist}" />
 		<delete dir="${syllabus_dist}" />
+		<delete dir="${assignments_dist}" />
 	</target>
 	
 	<!-- Rebuild -->
 	<target name="rebuild" depends="clean, all"></target>
 	
 	<!-- All -->
-	<target name="all" depends="homepage,syllabus"></target>
+	<target name="all" depends="homepage,syllabus,assignments"></target>
 </project>
