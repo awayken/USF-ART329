@@ -126,6 +126,8 @@ a.html5logo:hover { border: none; }
 @media print {
 	* { background: #fff; }
 	
+	body { color: #000; font: normal normal normal 8pt/1.5 Georgia, 'Times New Roman', serif; }
+	
 	a, a:link, a:visited
 		{ font-weight: normal; text-decoration: underline; }		
 	a:link:after, a:visited:after {
@@ -135,11 +137,14 @@ a.html5logo:hover { border: none; }
 		
 	code { font-size: 1em; }
 	
+	header h1, header h2, header h3, header h4, header h5, header h6
+		{ font-family: Georgia, 'Times New Roman', serif; }
+	
 	nav { display: none; }
 	
 	section { padding-left: 20px; page-break-after: always; page-break-inside: avoid; }
 	section h1, section h2, section h3, section h4, section h5, section h6
-		{ font-family: georgia, serif; }
+		{ font-family: Georgia, 'Times New Roman', serif; }
 	section h1 { margin-left: -20px; color: #483183; background: #fff; }
 	
 	footer { display: none; }
