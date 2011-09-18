@@ -59,7 +59,6 @@
 		<loadfile srcFile="${assignments}/rubrics/12.html" property="rubric.12" encoding="UTF-8" failonerror="false" />
 		<loadfile srcFile="${assignments}/rubrics/13.html" property="rubric.13" encoding="UTF-8" failonerror="false" />
 		<loadfile srcFile="${assignments}/rubrics/14.html" property="rubric.14" encoding="UTF-8" failonerror="false" />
-		<loadfile srcFile="${assignments}/rubrics/15.html" property="rubric.15" encoding="UTF-8" failonerror="false" />
 		
 		<replace dir="${assignments_dist}" token="@rubric_01@" value="${rubric.01}" />
 		<replace dir="${assignments_dist}" token="@rubric_02@" value="${rubric.02}" />
@@ -75,7 +74,6 @@
 		<replace dir="${assignments_dist}" token="@rubric_12@" value="${rubric.12}" />
 		<replace dir="${assignments_dist}" token="@rubric_13@" value="${rubric.13}" />
 		<replace dir="${assignments_dist}" token="@rubric_14@" value="${rubric.14}" />
-		<replace dir="${assignments_dist}" token="@rubric_15@" value="${rubric.15}" />
 		
 	</target>
 	
