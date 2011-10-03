@@ -1,5 +1,7 @@
 body { font-size: 200%; }
 p { color: red; }
 /* p { color: orange; } */
+/* p { color: rgb(30, 255, 90); } */
+/* p { color: rgb(10%, 20%, 80%); } */
 /* p { color: #600060; } */
 /* p { color: #0f0; } */

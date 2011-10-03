@@ -1,2 +1,4 @@
 body { font-size: 200%; }
 p { word-spacing: 1em; }
+/* p { word-spacing: 0; } */
+/* p { word-spacing: -0.25em; } */

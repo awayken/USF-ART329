@@ -1,3 +1,12 @@
-body { font-size: 200%; }
+@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis:200,300,400,500,600,700,800);
+body { font-size: 200%; font-family: 'Terminal Dosis', sans-serif; }
 p { font-weight: bold; }
+/* p { font-weight: 100; } */
+/* p { font-weight: 200; } */
+/* p { font-weight: 300; } */
+/* p { font-weight: 400; } */
+/* p { font-weight: 500; } */
+/* p { font-weight: 600; } */
+/* p { font-weight: 700; } */
+/* p { font-weight: 800; } */
 /* p { font-weight: 900; } */
