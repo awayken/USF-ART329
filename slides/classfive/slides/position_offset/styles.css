@@ -1,0 +1,5 @@
+body { font-size: 200%; }
+#move { position: absolute; width: 400px; background: yellow;  }
+#move { top: 0; left: 0; }
+/* #move { bottom: 0; right: 0; } */
+/* #move { top: 20%; } */

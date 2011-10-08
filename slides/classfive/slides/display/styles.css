@@ -1,0 +1,6 @@
+body { font-size: 200%; }
+ul li { display: list-item; }
+/* ul li { display: block; } */
+/* ul li { display: inline; } */
+/* ul li { display: inline-block; } */
+/* ul li { display: inline-block; width: 18%; background: yellow; } */

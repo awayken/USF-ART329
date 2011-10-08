@@ -1,5 +1,10 @@
-#box { width: 100px; height: 100px; }
-#box { border-top-width: 2px; border-top-style: solid; border-top-color: #000; }
-/* #box { border-width: 2px; border-style: solid; border-color: #000; } */
-/* #box { border: 2px solid #000; } */
-/* #box { border-width: 1px 2px 3px 4px; border-style: dotted dashed double outset; border-color: #f00 #0f0 #00f #000; } */
+body { font-size: 200%; }
+p { border: 1px solid #000; }
+/* p { border-width: 1px 2px 3px 4px; border-style: solid; border-color: #000; } */
+/* p { border: 8px dotted #000; } */
+/* p { border: 8px dashed #000; } */
+/* p { border: 8px double #000; } */
+/* p { border: 8px groove #000; } */
+/* p { border: 8px ridge #000; } */
+/* p { border: 8px inset #000; } */
+/* p { border: 8px outset #000; } */

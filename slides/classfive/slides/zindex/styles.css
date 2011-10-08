@@ -1,0 +1,6 @@
+body { font-size: 200%; }
+#move1 { position: absolute; top: 0; left: 0; background: yellow; }
+#move2 { position: absolute; top: 40px; left: 0; background: silver; }
+#move1 { z-index: 1; } #move2 { z-index: 2; }
+/* #move1 { z-index: 2; } #move2 { z-index: 1; } */
+/* #move1 { z-index: 1; } #move2 { z-index: 1; } */

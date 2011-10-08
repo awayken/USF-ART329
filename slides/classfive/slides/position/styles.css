@@ -1,0 +1,5 @@
+body { font-size: 200%; }
+#move { position: static; background: yellow; }
+/* #move { position: relative; top: 90px; } */
+/* #move { position: absolute; top: 90px; } */
+/* #move { position: fixed; top: 90px; } */

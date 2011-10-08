@@ -1,0 +1,6 @@
+body { font-size: 200%; }
+.floatleft { float: left; }
+.floatright { float: right; }
+/* .clearer { clear: left; } */
+/* .clearer { clear: right; } */
+/* .clearer { clear: both; } */

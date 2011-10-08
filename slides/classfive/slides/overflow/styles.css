@@ -1,0 +1,6 @@
+body { font-size: 200%; }
+p { height: 100px; background: yellow; }
+p { overflow: visible; }
+/* p { overflow: hidden; } */
+/* p { overflow: scroll; } */
+/* p { overflow: auto; } */
