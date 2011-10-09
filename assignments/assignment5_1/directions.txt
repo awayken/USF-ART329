@@ -1,0 +1,13 @@
+Directions for Assignment 5, 1
+==============================
+Change the color of the body to gray with a background of #f0f0f0. Change the font family to Arial, but use the appropriate generic font as a backup. Set the font size to 1 em. Set the line's height to 1 1/2 lines high.
+
+Update all hyperlinks to be maroon with no underline. Show the underline when you hover on the hyperlink.
+
+Indent every paragraph by 20 pixels. Update all strongly emphasized text to use a font weight of 900 and to be italic.
+
+Heading 1 and 2 should both be black and centered
+
+Heading 1 should have a font size of 200%. Make all the text uppercase.
+
+Heading 2 should have a font size of 150%. Display the text with small capitals.

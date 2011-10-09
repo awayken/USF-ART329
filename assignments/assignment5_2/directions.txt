@@ -1,0 +1,15 @@
+Directions for Assignment 5, 2
+==============================
+Set the height of the header to 30 pixels. Give it a bottom margin of 12 pixels.
+
+Float the nav to the left, set width to 120 and height to 200 pixels. Set the right and bottom margins to 8 pixels. Set the padding of the top and bottom to 10 pixels, and the left and right sides to 4 pixels.
+
+Give section1 a right margin of 84 pixels and a bottom margin of 8 pixels. Pad it 4 pixels all the way around. Set the height to 80 pixels.
+
+Pad section2 by 4 pixels all the way around. Set the height to 80 pixels.
+
+Set the clear on section3 to left. Pad it 4 pixels all the way around. Set the height to 80 pixels.
+
+Position the share absolutely. Set the top to 60 pixels and the place is all the way to the right. Set the width to 80 pixels. Set list style type to none. Remove all margin and padding.
+
+Set the width of the footer to 70% and give it a top and bottom margin of 8 pixels. Center the entire footer (not the text).

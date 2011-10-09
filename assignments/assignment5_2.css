@@ -1,0 +1,11 @@
+#header { height: 30px; margin-bottom: 12px; }
+
+#nav { float: left; width: 120px; height: 200px; margin: 0 8px 8px 0; padding: 10px 4px; }
+
+.section { margin-bottom: 8px; padding: 4px; height: 80px; }
+#section1 { margin-right: 84px; }
+#section3 { clear: left; }
+
+#share { position: absolute; top: 60px; right: 0; width: 80px; list-style-type: none; margin: 0; padding: 0; }
+
+#footer { width: 70%; margin: 8px auto; }

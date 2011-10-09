@@ -1,0 +1,12 @@
+body { color: gray; background: #f0f0f0; font-family: Arial, sans-serif; font-size: 1em; line-height: 1.5 }
+
+h1, h2 { color: #000; text-align: center; }
+h1 { font-size: 200%; text-transform: uppercase; }
+h2 { font-size: 150%; font-variant: small-caps;}
+
+p { text-indent: 20px; }
+
+strong { font-weight: 900; font-style: italic; }
+
+a:link, a:visited { color: maroon; text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
