@@ -48,7 +48,7 @@ footer p { margin: 0; padding: 4px 8px; }
 
 table.grading { width: 140px; margin: 0 auto; }
 
-table.rubric { width: 90%; margin: 8px auto 8px auto; }
+table.rubric { width: 90%; margin: 8px auto 8px auto; border-collapse: collapse; }
 table.rubric thead th { width: 17%; }
 table.rubric thead th.area { width: 32%; }
 table.rubric thead th span { display: block; }
