@@ -53,6 +53,8 @@ table.rubric thead th { width: 17%; }
 table.rubric thead th.area { width: 32%; }
 table.rubric thead th span { display: block; }
 table.rubric tbody th { padding-right: 4px; }
+table.rubric tbody th ul, table.rubric tbody th ol
+	{ margin: 1em 0; padding: 0 0 0 3em; }
 
 .html5logo { display: block; margin: 8px auto 0 auto; }
 
@@ -111,6 +113,8 @@ table.rubric thead th.good { color: #060; }
 table.rubric thead th.better { color: #090; }
 table.rubric thead th.best { color: #0f0; }
 table.rubric tbody th { border-top: 1px solid #483183; background: #f6f6f6; font-weight: normal; text-align: right; }
+table.rubric tbody th ul, table.rubric tbody th ol
+	{ text-align: left; }
 table.rubric tbody td { border-top: 1px solid #483183; }
 table.rubric tbody tr:first-child th, table.rubric tbody tr:first-child td
 	{ border-top: none; }
